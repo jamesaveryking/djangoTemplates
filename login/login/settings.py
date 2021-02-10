@@ -25,7 +25,9 @@ SECRET_KEY = '%wz_vm4@wy(a=(l9q19i$!i)wh(z_ijt77$uy$3&bo=d*=-rsf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -37,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
+    'amazonsso',
+    'emailsso',
+    'githubsso',
+    'googlesso',
 ]
 
 MIDDLEWARE = [
