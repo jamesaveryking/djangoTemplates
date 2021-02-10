@@ -8,3 +8,4 @@ class User(models.Model):
 
 class LoggedUser(models.Model):
     u = models.ForeignKey(User, on_delete=models.CASCADE)
+    s = models.ForeignKey()
